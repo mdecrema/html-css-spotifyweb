@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CLASSI GENERICHE */
+
+.up_case {
+  text-transform: uppercase;
+}
+
+.gr {
+  color: grey;
+}
+
+/* ASIDE */
+
+.control-panel {
+  width: 300px;
+  background-color: #000;
+  height: 100vh;
+}
+
+.control-panel a {
+  text-decoration: none;
+  color: grey;
+}
+
+.logo {
+  height: 50px;
+}
