@@ -18,6 +18,10 @@ body {
   color: grey;
 }
 
+.m_top_30 {
+  margin-top: 30px;
+}
+
 /* ASIDE */
 
 .control-panel {
@@ -65,7 +69,7 @@ body {
   width: calc(100vw - 300px);
   height: 100vh;
   background-color: #191413;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   overflow-x: hidden;
   overflow-y: auto;
   float: left;
@@ -94,13 +98,20 @@ body {
   border-bottom: 1px solid yellow;
 }
 
-.album_list {
+.sections_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.albums_list {
   width: calc(100% - 20px);
-  height: 150px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: blue;
 }
 
-.photo_album {
+.box_album {
   width: 150px;
   height: 100%;
   background-color: yellow;
@@ -108,20 +119,20 @@ body {
   margin: 0 6px;
 }
 
-.titoli_album_list {
-  width: calc(100% - 20px);
-  height: 70px;
-  background-color: green;
+.photo_album {
+  width: 150px;
+  height: 150px;
+  background-color: red;
 }
 
-.titolo_album {
-  width: 150px;
-  height: 100px;
-  display: inline-block;
-  text-align: center;
-  margin: 0 6px;
-  background-color: orange;
+.creato_per_te {
+  margin-top: 30px;
 }
+
+.artisti_popolari {
+
+}
+
 /* FOOTER */
 
 .player {
