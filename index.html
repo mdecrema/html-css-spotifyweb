@@ -2,6 +2,7 @@
 <html>
   <header>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>
@@ -14,13 +15,15 @@
           <img class="logo" src="img/spotify-logo.png" />
             <nav class="main-nav">
                 <ul>
-                  <li><a href="#"><strong>Home</strong></a></li>
-                  <li><a href="#">Cerca</a></li>
-                  <li><a href="#">La tua libreria</a></li>
+                  <li><a id="home" href="#"><i class="fas fa-home wh"></i><strong>Home</strong></a></li>
+                  <li><a href="#"><i class="fas fa-search"></i>Cerca</a></li>
+                  <li><a href="#"><i class="fas fa-book"></i>La tua libreria</a></li>
                 </ul>
             </nav>
             <nav class="elenco-playlist">
-            <h3 class="up_case gr">playlist</h3>
+            <h4 class="up_case wh">playlist</h4>
+            <div class="crea_playlist display_bl"><i class="fas fa-plus plus"></i></div>
+            <h5 class="display_bl wh">Crea Playlist</h5>
               <ul>
                 <li><a href="#">Nome playlist</a></li>
                 <li><a href="#">Nome playlist</a></li>
@@ -33,6 +36,11 @@
                 <li><a href="#">Nome playlist</a></li>
               </ul>
             </nav>
+            <div class="profilo">
+              <a class="app gr f_size_12" href="#"><i class="far fa-arrow-alt-circle-down f_size_12"></i>Installa App</a><hr/>
+              <div class="img_profile display_bl"><i class="far fa-user plus wh"></i></div>
+              <h5 class="display_bl wh"><strong>John Doe</strong></h5>
+            </div>
         </aside>
       </header>
       <main>
@@ -40,7 +48,9 @@
         <div class="main-content">
           <!-- UPGRADE DIV -->
           <div class="upgrade">
-              <a class="up_case" href="#">effettua l'upgrade</a>
+              <div class="btn_upgrade">
+                <a class="up_case" href="#">effettua l'upgrade</a>
+              </div>
           </div>
           <!-- /UPGRADE DIV -->
 

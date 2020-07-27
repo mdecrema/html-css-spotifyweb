@@ -14,12 +14,24 @@ body {
   text-transform: uppercase;
 }
 
+.f_size_12 {
+  font-size: 12px;
+}
+
 .gr {
   color: grey;
 }
 
+.wh {
+  color: #fff;
+}
+
 .m_top_30 {
   margin-top: 30px;
+}
+
+.display_bl {
+  display: inline-block;
 }
 
 /* ASIDE */
@@ -40,6 +52,34 @@ body {
   height: 50px;
 }
 
+#home {
+  color: #fff;
+}
+
+.crea_playlist {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  position: relative;
+  vertical-align: middle;
+}
+
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img_profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: grey;
+  vertical-align: middle;
+  position: relative;
+}
+
 /* DIV UPGRADE */
 
 .upgrade {
@@ -54,12 +94,16 @@ body {
   padding: 20px;
 }
 
+.btn_upgrade {
+  border: 1px solid #fff;
+  padding: 5px 25px;
+  border-radius: 28px;
+}
+
 .upgrade a {
   text-decoration: none;
   color: #fff;
-  border: 1px solid #fff;
-  font-size: 16px;
-  border-radius: 28px;
+  font-size: 12px;
   text-align: center;
 }
 
