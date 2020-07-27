@@ -24,6 +24,7 @@ body {
   width: 300px;
   background-color: #000;
   height: 100vh;
+  display: inline-block;
 }
 
 .control-panel a {
@@ -33,4 +34,36 @@ body {
 
 .logo {
   height: 50px;
+}
+
+/* DIV UPGRADE */
+
+.upgrade {
+  width: calc(100vw-300px);
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.upgrade a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 16px
+  border-radius: 28px;
+  text-align: center;
+}
+
+/* MAIN */
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191413;
 }
