@@ -266,6 +266,26 @@ body {
 
 .controller {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.brano_secs {
+  width: 50px;
+  height: 50%;
+  line-height: 65px;
+  text-align: center;
+}
+
+.pad_5 {
+  padding: 0 5px;
+}
+
+.status_brano {
+  width: 50%;
+  height: 50%;
+  border-bottom: 3px solid #fff;
+  text-align: center;
 }
 
 .volume {
