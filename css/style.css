@@ -18,6 +18,10 @@ body {
   font-size: 12px;
 }
 
+.f_weight_400 {
+  font-weight: lighter;
+}
+
 .gr {
   color: grey;
 }
@@ -30,6 +34,14 @@ body {
   margin-top: 30px;
 }
 
+.m_top_5 {
+  margin-top: 5px;
+}
+
+.m_bottom_5 {
+  margin-bottom: 5px;
+}
+
 .display_bl {
   display: inline-block;
 }
@@ -39,8 +51,10 @@ body {
 .control-panel {
   width: 300px;
   background-color: #000;
-  height: 100vh;
+  height: calc(100vh - 100px);
+  padding: 15px;
   float: left;
+  position: relative;
 }
 
 .control-panel a {
@@ -48,8 +62,16 @@ body {
   color: grey;
 }
 
+.box_logo {
+  height: 70px;
+}
+
 .logo {
   height: 50px;
+}
+
+.main-nav ul li {
+  padding: 5px 0;
 }
 
 #home {
@@ -69,6 +91,23 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.elenco-playlist {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.elenco-playlist ul li {
+  padding: 5px 0;
+}
+
+.profilo {
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .img_profile {
@@ -110,7 +149,7 @@ body {
 /* MAIN */
 
 .main-content {
-  width: calc(100vw - 300px);
+  width: calc(100vw - 310px);
   height: 100vh;
   background-color: #191413;
   padding: 0 20px 20px 20px;
