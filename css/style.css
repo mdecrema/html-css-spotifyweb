@@ -219,6 +219,7 @@ body {
 }
 
 .generi ul li {
+  width: 130px;
   display: inline-block;
   list-style: none;
   font-size: 12px;
@@ -315,6 +316,7 @@ body {
 
 .blue {
   background-color: trasparent;
+  border: 1px solid #000;
 }
 
 .brano {
@@ -347,6 +349,11 @@ body {
   line-height: 50px;
 }
 
+.actions ul li {
+  list-style: none;
+  display: inline-block;
+}
+
 .folder {
   margin-left: 10px;
 }
@@ -358,11 +365,15 @@ body {
 }
 
 .brano_secs {
-  width: 10%;
+  width: 50px;
   height: 50%;
   margin-top: 15px;
   line-height: 65px;
   text-align: center;
+}
+
+.icon_controller {
+  padding: 0 1%;
 }
 
 .pad_5 {
@@ -382,7 +393,7 @@ body {
 }
 
 .status_brano {
-  width: 50%;
+  width: calc(100% - 100px);
   height: 50%;
   margin-top: 15px;
   border-bottom: 3px solid #fff;
@@ -468,5 +479,52 @@ body {
   .img_profile {
     display: inherit;
     margin-top: 15px;
+  }
+
+  .generi {
+    margin-bottom: 50px;
+  }
+
+  /*PLAYER*/
+
+  .brano {
+    flex-basis: 15%;
+  }
+
+  .nome_brano {
+    width: 80px;
+  }
+
+  .actions {
+    height: 70px;
+    margin-top: 0;
+  }
+
+  .actions ul li {
+    height: 20px;
+    display: inherit;
+    font-size: 14px;
+  }
+
+  .folder {
+    margin-left: 0;
+  }
+
+  /*Controller*/
+  .controller {
+    flex-basis: 70%;
+  }
+
+  .status_brano {
+    width: calc(100% - 100px);
+    font-size: 10px;
+  }
+
+  .brano_secs {
+    width: 50px;
+  }
+
+  .volume {
+    flex-basis: 15%;
   }
 }
