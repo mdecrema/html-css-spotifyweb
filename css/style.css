@@ -16,6 +16,10 @@ body {
   position: relative;
 }
 
+.dec_none {
+  text-decoration: none;
+}
+
 .up_case {
   text-transform: uppercase;
 }
@@ -74,8 +78,10 @@ body {
   width: 300px;
   background-color: #000;
   height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
   padding: 15px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .control-panel a {
@@ -121,8 +127,13 @@ body {
 }
 
 .elenco-playlist {
-  max-height: 250px;
-  overflow: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.elenco-playlist ul {
+  height: 80%;
+  overflow-y: auto;
 }
 
 .elenco-playlist ul li {
@@ -130,11 +141,12 @@ body {
 }
 
 .profilo {
-  width: calc(100% - 30px);
-  margin-left: 15px;
-  position: absolute;
+  width: calc(100% - 15px);
+  height: 80px;
+  margin-top: auto;
+  /*position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 0;*/
 }
 
 .img_profile {
@@ -158,6 +170,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  z-index: 2;
 }
 
 .btn_upgrade {
@@ -231,7 +244,6 @@ body {
 
 .box_album {
   width: 150px;
-  height: 100%;
   background-color: trasparent;
   display: inline-block;
   margin: 0 6px;
@@ -273,6 +285,7 @@ body {
 
 .box_album:hover .play_hidden{
   display: block;
+  cursor: pointer;
 }
 
 
@@ -381,6 +394,20 @@ body {
   height: 48%;
   margin: 0 10px;
   border-bottom: 3px solid #fff;
+}
+
+.linea_hidden {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  border-bottom: 3px solid yellow;
+}
+
+.linea:hover .linea_hidden {
+  display: block;
 }
 
 .border {
