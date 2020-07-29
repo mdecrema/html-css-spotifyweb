@@ -90,12 +90,18 @@ body {
 }
 
 .box_logo {
-  height: 70px;
+  width: 150px;
+  height: 100px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-image: url(../img/spotify-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.logo {
+/*.logo {
   height: 60px;
-}
+}*/
 
 .main-nav ul li {
   padding: 5px 0;
@@ -156,6 +162,7 @@ body {
   background-color: grey;
   vertical-align: middle;
   position: relative;
+  display: inline-block;
 }
 
 /* DIV UPGRADE */
@@ -205,6 +212,10 @@ body {
   margin-top: 80px;
   margin-bottom: 30px;
   text-align: center;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;*/
 }
 
 .generi ul li {
@@ -412,4 +423,50 @@ body {
 
 .border {
   border: 1px solid #000;
+}
+
+/* MEDIA QUERY */
+
+/* Smartphone */
+
+@media only screen and (max-width: 768px) {
+  .upgrade {
+    width: calc(100vw - 50px);
+  }
+
+  .main-content {
+    width: calc(100vw - 50px);
+  }
+
+  .control-panel {
+    padding: 15px 10px;
+    width: 50px;
+  }
+
+  .box_logo {
+    width: 35px;
+    height: 40px;
+    background-position: 0 60%;
+  }
+
+  .elenco-playlist {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+
+  .hr_hidden {
+    display: none;
+  }
+
+  .app {
+    margin: 5px;
+  }
+
+  .img_profile {
+    display: inherit;
+    margin-top: 15px;
+  }
 }
