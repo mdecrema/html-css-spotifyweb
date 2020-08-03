@@ -11,7 +11,6 @@
     </title>
   </header>
   <body>
-
     <!-- MENU PRINCIPALE Left Side -->
     <header>
         <aside class="control-panel">
@@ -26,12 +25,9 @@
                 </ul>
             </nav>
             <nav class="elenco-playlist">
-            <!--<nav class="playlist_container">-->
             <h4 class="up_case wh m_top_20 m_bottom_5">playlist</h4>
             <div class="crea_playlist display_bl m_top_5 m_bottom_5"><i class="fas fa-plus plus"></i></div>
             <h5 class="display_bl wh m_top_5 m_bottom_5">Crea Playlist</h5>
-
-
               <ul>
                 <li><a href="#">Nome playlist</a></li>
                 <li><a href="#">Nome playlist</a></li>
@@ -82,7 +78,7 @@
               <div class="box_album">
                 <div class="play_hidden pos_rel"><i class="far fa-play-circle play_icon wh"></i></div>
                 <img class="photo_album" src="img/metal_lifting.jpg" />
-                <a class="dec_none gr" href="#"><h4 class="m_top_10 wh">Heavy Metal</h4>
+                <a class="dec_none gr" href="#"><h4 id="newTitle" class="m_top_10 wh">Heavy Metal</h4>
                 <h5 class="gr">Subtitle</h5></a>
               </div>
               <div class="box_album">
@@ -120,7 +116,7 @@
           <!-- /SEZIONE 'RECENTLY PLAYED' -->
 
           <!-- SEZIONE 'CREATO PER TE' -->
-          <div class="creato_per_te m_top_20 sections_layout">
+          <div class="creato_per_te sections_layout">
             <h2 class="wh">Creato per John Doe</h2>
             <h5 class="m_bottom_30 gr f_weight_400">Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="albums_list">
@@ -139,7 +135,7 @@
           <!-- /SEZIONE 'CREATO PER TE' -->
 
           <!-- SEZIONE 'ARTISTI POPOLARI' -->
-          <div class="artisti_popolari m_top_20 sections_layout">
+          <div class="artisti_popolari sections_layout">
             <h2 class="wh">Artisti più popolari</h2>
             <h5 class="m_bottom_30 gr f_weight_400">Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="albums_list">
@@ -180,9 +176,9 @@
           </div>
         </div>
         <div class="controller blue wh">
-          <div class="brano_secs">
+          <!--<div class="brano_secs">
             <h6>0:25</h6>
-          </div>
+          </div>-->
           <div class="status_brano">
               <i class="fas fa-random icon_controller"></i>
               <i class="fas fa-step-backward icon_controller"></i>
@@ -190,9 +186,9 @@
               <i class="fas fa-step-forward icon_controller"></i>
               <i class="fas fa-redo-alt icon_controller"></i>
           </div>
-          <div class="brano_secs">
+          <!--<div class="brano_secs">
             <h6>4:35</h6>
-          </div>
+          </div>-->
         </div>
         <div class="volume blue wh">
           <div class="linea pos_rel"><div class="linea_hidden"></div></div>
@@ -204,7 +200,8 @@
         </div>
       </div>
     </footer>
-    <!-- /PLAYER a PIE' DI PAGINA -->
 
+    <!-- /PLAYER a PIE' DI PAGINA -->
+    <script src="js/script.js"></script>
   </body>
 </html>
